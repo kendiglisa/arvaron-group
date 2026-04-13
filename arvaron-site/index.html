@@ -1,24 +1,24 @@
-<body>
-  <!-- A hidden form required for Netlify to detect React form submissions -->
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="firstName" />
-    <input type="text" name="lastName" />
-    <input type="email" name="email" />
-    <select name="interest"></select>
-    <textarea name="message"></textarea>
-  </form>
-  
-  <div id="root"></div>
-  <!-- ... rest of your index.html ... -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arvaron Group</title>
+  </head>
+  <body>
+    <!-- Netlify form (keep this) -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="firstName" />
+      <input type="text" name="lastName" />
+      <input type="email" name="email" />
+      <select name="interest"></select>
+      <textarea name="message"></textarea>
+    </form>
 
-**Step 3: Create a production build**
-Open your terminal in your project folder and run your build command (usually `npm run build`). This will generate a folder called `dist` (if you use Vite) or `build` (if you use Create React App).
+    <!-- React root -->
+    <div id="root"></div>
 
-**Step 4: Drag & Drop Deploy**
-1. Log in to [Netlify.com](https://app.netlify.com/).
-2. Go to your **Sites** page.
-3. Simply drag and drop that `dist` or `build` folder directly into the designated dropzone on the Netlify dashboard.
-4. Your site is now live!
-
-**Where to see your submissions:**
-Once deployed, submit a test message through your live website. Then, go to your Netlify Dashboard, click on your site, and click the **"Forms"** tab on the left sidebar. You will see your active "contact" form and all incoming submissions there!
+    <!-- THIS IS THE CRITICAL LINE -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
