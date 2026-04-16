@@ -66,10 +66,10 @@ const brandColors = {
 };
 
 const verticals = [
-  { id: 'sourcing', name: "Arvaron Sourcing", icon: Globe, desc: "Global procurement, strategic vendor management, and optimized supply networks.", image: "https://images.unsplash.com/photo-1586528116311-ad8ed7c80a30?auto=format&fit=crop&q=80&w=800" },
+  { id: 'sourcing', name: "Arvaron Sourcing", icon: Globe, desc: "Global procurement, strategic vendor management, and optimized supply networks.", image: "https://static.vecteezy.com/system/resources/previews/071/785/284/large_2x/luminous-plexus-world-map-visualizing-global-digital-connectivity-free-photo.jpg?auto=format&fit=crop&q=80&w=800" },
   { id: 'logistics', name: "Arvaron Logistics", icon: Truck, desc: "End-to-end freight management, warehousing, and next-gen supply chain solutions.", image: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&q=80&w=800" },
   { id: 'digital', name: "Arvaron Digital", icon: Monitor, desc: "Transformative digital marketing, media buying, and brand amplification.", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" },
-  { id: 'infra', name: "Arvaron Infra", icon: Building, desc: "Large-scale infrastructure development, commercial real estate, and heavy engineering.", image: "https://images.unsplash.com/photo-1541888086225-ae5e076dddf7?auto=format&fit=crop&q=80&w=800" },
+  { id: 'infra', name: "Arvaron Infra", icon: Building, desc: "Large-scale infrastructure development, commercial real estate, and heavy engineering.", image: "https://images.pexels.com/photos/373479/pexels-photo-373479.jpeg?auto=format&fit=crop&q=80&w=800" },
   { id: 'retail', name: "Arvaron Retail", icon: ShoppingCart, desc: "Next-generation omnichannel retail experiences and consumer goods distribution.", image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800" },
   { id: 'tech', name: "Arvaron Technologies", icon: Cpu, desc: "Innovative software solutions, AI integration, and enterprise IT consulting.", image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" },
   { id: 'exports', name: "Arvaron Exports", icon: Package, desc: "Facilitating international trade and expanding cross-border commercial networks.", image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=800" },
