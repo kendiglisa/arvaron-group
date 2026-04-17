@@ -457,6 +457,8 @@ export default function App() {
                     <form className="space-y-6" name="contact" method="POST" data-netlify="true" onSubmit={handleFormSubmit}>
                       {/* Required hidden input for Netlify routing */}
                       <input type="hidden" name="form-name" value="contact" />
+                      <input type="hidden" name="source" value="website" />
+                      <input type="hidden" name="page" value="contact" />
                       {/* Honeypot field (ADD THIS BLOCK) */}
                       <p style={{ display: "none" }}>
                         <label>
