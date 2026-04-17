@@ -125,10 +125,12 @@ export default function App() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "contact",
-        ...formData,
-        "bot-field": "",
+     body: encode({
+      "form-name": "contact",
+      ...formData,
+      "bot-field": "",
+      "source": "website",
+      "page": "contact",
       })
     })
       .then(() => {
@@ -172,7 +174,7 @@ export default function App() {
           {/* Logo Area */}
           <div className="flex items-center cursor-pointer" onClick={() => navigateTo('home')}>
             <img 
-              src="Arvaron.png" 
+              src="/Arvaron.png" 
               alt="Arvaron Logo" 
               className="h-10 md:h-12 object-contain"
               onError={(e) => {
