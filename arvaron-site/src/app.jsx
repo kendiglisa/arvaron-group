@@ -125,7 +125,11 @@ export default function App() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formData })
+      body: encode({
+        "form-name": "contact",
+        ...formData,
+        "bot-field": "",
+      })
     })
       .then(() => {
         setFormStatus('success');
