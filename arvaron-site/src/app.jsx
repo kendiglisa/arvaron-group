@@ -168,7 +168,7 @@ export default function App() {
     <div className="min-h-screen bg-[#000000] text-gray-200 font-sans selection:bg-[#00bf63] selection:text-black overflow-x-hidden">
       
       {/* Navigation */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/90 backdrop-blur-md py-4 border-b border-gray-800' : 'bg-transparent py-6'}`}>
+      <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/90 backdrop-blur-md py-3 border-b border-gray-800' : 'bg-transparent py-4'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           
           {/* Logo Area */}
@@ -176,7 +176,7 @@ export default function App() {
             <img 
               src="/Arvaron.png" 
               alt="Arvaron Logo" 
-              className="h-10 md:h-12 object-contain"
+              className="h-14 md:h-16 object-contain"
               onError={(e) => {
                 e.target.onerror = null;
                 e.target.style.display = 'none';
@@ -197,7 +197,7 @@ export default function App() {
               <button
                 key={link.id}
                 onClick={() => navigateTo(link.id)}
-                className={`text-sm uppercase tracking-wider font-semibold transition-colors duration-300 ${
+                className={`text-sm uppercase tracking-wider font-semibold whitespace-nowrap transition-colors duration-300 ${
                   currentPage === link.id ? 'text-[#00bf63]' : 'text-gray-300 hover:text-[#0a6cff]'
                 }`}
               >
@@ -245,7 +245,7 @@ export default function App() {
         {currentPage === 'home' && (
           <div className="animate-in fade-in duration-1000">
             {/* Hero Section */}
-            <section className="relative min-h-[100dvh] lg:h-screen flex items-center justify-center overflow-hidden">
+            <section className="relative min-h-screen py-20 md:py-32 flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 z-0">
                 <img 
                   src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000" 
@@ -256,7 +256,7 @@ export default function App() {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black"></div>
               </div>
               
-              <div className="relative z-10 text-center max-w-5xl mx-auto px-4">
+              <div className="relative z-10 text-center max-w-5xl mx-auto px-4 pt-24 md:pt-32">
                 <FadeInSection>
                   <h2 className="text-[#00bf63] font-bold tracking-widest uppercase mb-4 text-sm md:text-base">Welcome to Arvaron Group Holdings</h2>
                   <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight text-white">
