@@ -453,6 +453,12 @@ export default function App() {
                     <form className="space-y-6" name="contact" method="POST" data-netlify="true" onSubmit={handleFormSubmit}>
                       {/* Required hidden input for Netlify routing */}
                       <input type="hidden" name="form-name" value="contact" />
+                      {/* Honeypot field (ADD THIS BLOCK) */}
+                      <p style={{ display: "none" }}>
+                        <label>
+                          Don’t fill this out: <input name="bot-field" />
+                        </label>
+                      </p>
                       
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
@@ -482,6 +488,8 @@ export default function App() {
                         <label className="block text-sm font-medium text-gray-400 mb-2">Message</label>
                         <textarea name="message" value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} rows="4" className="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#00bf63] transition-colors resize-none" placeholder="How can we help you?" required></textarea>
                       </div>
+                      {/* Netlify reCAPTCHA */}
+                      <div data-netlify-recaptcha="true"></div>
                       <button type="submit" disabled={formStatus === 'submitting'} className="w-full bg-gradient-to-r from-[#00bf63] to-[#0a6cff] text-white font-bold py-4 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50 flex justify-center items-center">
                         {formStatus === 'submitting' ? 'Sending...' : 'Submit Inquiry'}
                       </button>
